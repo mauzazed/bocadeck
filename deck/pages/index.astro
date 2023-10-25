@@ -1,0 +1,34 @@
+---
+import Bare from "../chart/bare.astro"
+import Crew from '../cargo/crew.svelte'
+---
+
+<Bare title="Bocuse Cafetaria">
+  <section class="hero">
+    <div class="cfx">
+      <div class="ch1">
+        <img src="/stall.jpg" alt="">
+      </div>
+      <div class="ch2">
+        <h1>Bocuse Cafetaria</h1>
+        <p>
+          <em>Cafetaria</em> eksklusif untuk keluarga Avispa Group.
+          Dipersembahkan oleh tim dan Chef Jaque Bocuse, mengutamakan kualitas,
+          kesempurnaan, keseimbangan, dan <i>hight value</i>>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <Crew client:only="svelte" />
+</Bare>
+
+<style>
+  .hero {
+    padding: 10px;
+  }
+  .ch1 {width: 60%;}
+  .ch2 {
+    padding: 2em;
+  }
+</style>

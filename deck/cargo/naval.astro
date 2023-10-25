@@ -1,0 +1,18 @@
+---
+const { crew } = Astro.props
+import '../coast/naval.scss'
+---
+
+<nav class="naval">
+  <div class="ship">
+    <div class="chy">
+      <b>Bocuse Cafetaria</b>
+    </div>
+    {crew.fame && <div class="chw">Hai <b>{crew.fame}</b>!</div>}
+    <div class="chz">
+      {crew.fame && <a href="/api/logout">Log Out</a>}
+      {!crew.fame && ( <a href="/daftar">Sign Up</a>
+      <a href="/masuk">Log In</a> )}
+    </div>
+  </div>
+</nav>

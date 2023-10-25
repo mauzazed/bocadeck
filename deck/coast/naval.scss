@@ -1,0 +1,32 @@
+.naval {
+  background: #fff;
+
+  .ship {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 80px;
+    align-items: center;
+
+    .chy {
+      color: tomato;
+      font-size: 2em;
+      font-weight: 800;
+      grid-column: 1 / 4;
+      padding: 0 30px;
+    }
+
+    .chz {
+      grid-column: 6 / 7;
+
+      a {
+        padding: 0 10px;
+        margin: 0 5px;
+        display: inline-block;
+
+        &:link, &:visited {
+          color: #333;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body {
+  font-family: Quicksand, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  background: linear-gradient(80deg, orange, tomato);
+  min-height: 100vh;
+  font-size: 1.1em;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form {
+  padding: 1rem 4rem 3rem 4rem;
+  background: #fff;
+  border-radius: 0.7rem;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label,
+input:not([type="checkbox"]) {
+  display: block;
+  margin: 7px 0;
+}
+
+input:not([type="checkbox"]) {
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: 1px grey solid;
+  outline: none;
+  width: 100%;
+  display: block;
+  font-family: Quicksand;
+  font-size: 1rem;
+
+  &:focus {
+    border: 1px #333 solid;
+  }
+
+  &::placeholder {
+    font-family: Quicksand;
+    font-size: 1rem;
+  }
+
+  @at-root .chn {
+    display: flex;
+
+    input {
+      width: 50%;
+
+      &:last-of-type {
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 1.1rem;
+  font-family: Quicksand;
+  font-weight: 600;
+  background: rgb(0, 192, 134);
+  color: white;
+  display: inline-block;
+  margin: 14px auto;
+}
+
+div.error {
+  color: maroon;
+  background: rgba(255, 0, 0, 0.288);
+  padding: 7px 10px;
+  border-radius: 7px;
+}
